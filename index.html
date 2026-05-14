@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <h1>Тест InitData</h1>
+    <pre id="data"></pre>
+    <script>
+        // Эта штука работает только внутри Telegram
+        const data = window.Telegram.WebApp.initData;
+        document.getElementById('data').innerText = data;
+        console.log(data);
+    </script>
+</body>
+</html>
